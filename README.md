@@ -1,47 +1,48 @@
-# Daftar Tugas Kuliah (Checklist) - GUI Java Swing
+# Kasir Sederhana - GUI Java Swing
+**NIM** : F1D02410131
+**Nama** : Nisa Aulia Kirani
+
 ## Deskripsi Program
-Aplikasi sederhana untuk mencatat tugas. Tugas yang ditambahkan muncul sebagai checklist, lalu tugas yang dicentang bisa dihapus sekaligus.
+Aplikasi kasir sederhana untuk mencatat barang belanjaan, menghitung total, memberi diskon member, lalu menghitung kembalian. Semua barang yang dibeli tercatat di area struk.
+
 
 ## 5 Komponen Utama GUI yang Digunakan
 ### 1. Top-level Container Class: `JFrame`
-Class `DaftarTugasCek` meng-extend `JFrame`, jadi semua komponen lain ditaruh di dalamnya.
 
-### 2. Intermediate Container Class: `JPanel` dan `JScrollPane`
-- `JPanel` dipakai untuk mengelompokkan komponen: panel atas (input), panel daftar (checkbox), dan panel bawah (tombol).
-- `JScrollPane` membungkus panel daftar supaya bisa di-scroll kalau tugasnya banyak.
+Jendela utama aplikasi. Class `KasirSederhana` meng-extend `JFrame`, jadi semua komponen lain ditaruh di dalamnya.
 
 ### 2. Intermediate Container Class: `JPanel` dan `JScrollPane`
 
-- `JPanel` dipakai untuk mengelompokkan komponen: panel atas (input), panel daftar (checkbox), dan panel bawah (tombol).
-- `JScrollPane` membungkus panel daftar supaya bisa di-scroll kalau tugasnya banyak.
+- `JPanel` dipakai untuk mengelompokkan komponen: panel input barang, panel bawah (total dan kembalian), dan panel pembayaran.
+- `JScrollPane` membungkus area struk supaya bisa di-scroll kalau barangnya banyak.
 
 ### 3. Atomic Component Class
 
-- `JLabel` : teks "Tugas:" dan jumlah tugas
-- `JTextField` : kolom input nama tugas
-- `JButton` : tombol Tambah, Hapus yang dicentang, Hapus semua
-- `JCheckBox` : checklist untuk tiap tugas
+- `JLabel` : label judul input, total belanja, dan kembalian
+- `JTextField` : kolom nama barang, harga, jumlah, dan uang bayar
+- `JButton` : tombol Tambah Barang, Bayar, dan Reset
+- `JCheckBox` : pilihan member untuk diskon 10%
+- `JTextArea` : area untuk menampilkan struk belanja
 - `JOptionPane` : kotak dialog peringatan
 
-### 4. Layout Classes (4 layout)
+### 4. Layout Classes (3 layout)
 
-- `BorderLayout` : jendela utama (atas: input, tengah: daftar, bawah: tombol)
-- `FlowLayout` : panel input (label, text field, tombol Tambah)
-- `BoxLayout` : panel daftar, checkbox disusun ke bawah
-- `GridLayout` : panel bawah (3 kolom: 2 tombol dan 1 label)
+- `BorderLayout` : jendela utama (atas: input, tengah: struk, bawah: total dan pembayaran)
+- `GridLayout` : panel input (4 baris, 2 kolom) dan panel bawah (3 baris)
+- `FlowLayout` : baris pembayaran (label, kolom uang bayar, tombol Bayar dan Reset)
 
 ### 5. Event Listener
 
-- `ActionListener` (interface) : klik tombol Tambah, Hapus yang dicentang, dan Hapus semua
-- `KeyAdapter` (adapter class) : menambah tugas saat menekan tombol Enter (override `keyPressed`)
+- `ActionListener` (interface) : klik tombol Tambah Barang, Bayar, Reset, dan centang checkbox Member
+- `KeyAdapter` (adapter class) : menambah barang saat menekan tombol Enter di kolom jumlah (override `keyPressed`)
 
 ## Screenshot
+
 **Tampilan awal**
 ![Tampilan awal](screenshots/tampilan-awal.png)
 
-**Setelah menambah tugas dan mencentang beberapa tugas**
+**Setelah menambah beberapa barang**
 ![Setelah ditambah](screenshots/setelah-ditambah.png)
 
-**Setelah menghapus tugas yang dicentang**
-![Setelah dihapus](screenshots/setelah-dihapus.png)
-
+**Setelah pembayaran**
+![Setelah bayar](screenshots/setelah-bayar.png)
