@@ -10,28 +10,32 @@ Class `DaftarTugasCek` meng-extend `JFrame`, jadi semua komponen lain ditaruh di
 - `JPanel` dipakai untuk mengelompokkan komponen: panel atas (input), panel daftar (checkbox), dan panel bawah (tombol).
 - `JScrollPane` membungkus panel daftar supaya bisa di-scroll kalau tugasnya banyak.
 
+### 2. Intermediate Container Class: `JPanel` dan `JScrollPane`
+
+- `JPanel` dipakai untuk mengelompokkan komponen: panel atas (input), panel daftar (checkbox), dan panel bawah (tombol).
+- `JScrollPane` membungkus panel daftar supaya bisa di-scroll kalau tugasnya banyak.
+
 ### 3. Atomic Component Class
-|    Class      |         Fungsi di program                        |
-| `JLabel`      | Teks "Tugas:" dan jumlah tugas                   |
-| `JTextField`  | Kolom input nama tugas                           |
-| `JButton`     | Tombol Tambah, Hapus yang dicentang, Hapus semua |
-| `JCheckBox`   | Checklist untuk tiap tugas                       |
-| `JOptionPane` | Kotak dialog peringatan                          |
+
+- `JLabel` : teks "Tugas:" dan jumlah tugas
+- `JTextField` : kolom input nama tugas
+- `JButton` : tombol Tambah, Hapus yang dicentang, Hapus semua
+- `JCheckBox` : checklist untuk tiap tugas
+- `JOptionPane` : kotak dialog peringatan
 
 ### 4. Layout Classes (4 layout)
-|      Layout      |                  Dipakai di                                 |
-| `BorderLayout`   | Jendela utama (atas: input, tengah: daftar, bawah: tombol)  |
-| `FlowLayout`     | Panel input (label, text field, tombol Tambah)              |
-| `BoxLayout`      | Panel daftar, checkbox disusun ke bawah                     |
-| `GridLayout`     | Panel bawah (3 kolom: 2 tombol dan 1 label)                 |
+
+- `BorderLayout` : jendela utama (atas: input, tengah: daftar, bawah: tombol)
+- `FlowLayout` : panel input (label, text field, tombol Tambah)
+- `BoxLayout` : panel daftar, checkbox disusun ke bawah
+- `GridLayout` : panel bawah (3 kolom: 2 tombol dan 1 label)
 
 ### 5. Event Listener
-|       Class/Interface        |                Dipakai untuk                                     |
-| `ActionListener` (interface) | Klik tombol Tambah, Hapus yang dicentang, Hapus semua            |
-| `KeyAdapter` (adapter class) | Menambah tugas saat menekan tombol Enter (`override keyPressed`) |
+
+- `ActionListener` (interface) : klik tombol Tambah, Hapus yang dicentang, dan Hapus semua
+- `KeyAdapter` (adapter class) : menambah tugas saat menekan tombol Enter (override `keyPressed`)
 
 ## Screenshot
-
 **Tampilan awal**
 ![Tampilan awal](screenshots/tampilan-awal.png)
 
