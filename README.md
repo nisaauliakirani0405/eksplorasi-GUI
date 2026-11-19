@@ -37,7 +37,7 @@ Jendela utama aplikasi. Class `KasirSederhana` meng-extend `JFrame`, jadi semua 
 ![Tampilan awal](screenshots/tampilan-awal.png)
 
 **Setelah menambah beberapa barang**
-![Setelah ditambah](screenshots/setelah-ditambah.png)
+![Setelah ditambah](screenshots/setelah-ditambah-barang.png)
 
 **Setelah pembayaran**
 ![Setelah bayar](screenshots/setelah-bayar.png)

@@ -11,7 +11,7 @@ public class KasirSederhana extends JFrame {
     JTextArea areaStruk;
     JLabel lblTotal, lblKembalian;
 
-    double total = 0; // total belanja sebelum diskon
+    double total = 0; 
 
     public KasirSederhana() {
         setTitle("Kasir Sederhana");
