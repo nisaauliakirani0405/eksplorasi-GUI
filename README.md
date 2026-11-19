@@ -1,11 +1,6 @@
 # Kasir Sederhana - GUI Java Swing
 **NIM** : F1D02410131
 **Nama** : Nisa Aulia Kirani
-
-## Deskripsi Program
-Aplikasi kasir sederhana untuk mencatat barang belanjaan, menghitung total, memberi diskon member, lalu menghitung kembalian. Semua barang yang dibeli tercatat di area struk.
-
-
 ## 5 Komponen Utama GUI yang Digunakan
 ### 1. Top-level Container Class: `JFrame`
 
